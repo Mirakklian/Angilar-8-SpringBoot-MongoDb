@@ -1,0 +1,20 @@
+<div class="container">
+    <h2 style="color: slateblue;">Hospital Details: </h2>
+    <hr>
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Number</th>
+            <th>Hospital Name Name</th>
+            <th>Address</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let review of reviews">
+          <td>{{ review.no}}</td>
+          <td>{{ review.name }}</td>
+          <td>{{ review.add }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
